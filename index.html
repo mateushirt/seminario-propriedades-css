@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="code.css">
+	<link rel="stylesheet" href="outline.css">
+	<title>Outline no CSS</title>
+</head>
+<body>
+	<header>
+		<h1>Outline no CSS (contornos)</h1>
+	</header>
+
+	<main>
+		<ul>
+			<li>
+				<!-- Outline -->
+				<details>
+					<summary>Outline style</summary>
+					<p>A propriedade CSS <code><span class="property">outline-style</span></code> especifica o estilo do contorno. Ela é obrigatória para que um elemento possua contorno, sem ela o navegador não desenha contorno nenhum. Os contornos podem ter 12 estilos diferentes:</p>
+					<div class="code-example style">
+						<p class="title">Nenhum</p>
+						<p class="description">Não especifica contorno, comportamento padrão</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-style</span>: <span class="value">none</span>; }</code>
+						<span class="outline-style none">Elemento estilizado</span>
+					</div>
+
+					<div class="code-example style">
+						<p class="title">Escondido</p>
+						<p class="description">Especifica um contorno escondido</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-style</span>: <span class="value">hidden</span>; }</code>
+						<span class="outline-style hidden">Elemento estilizado</span>
+					</div>
+
+					<div class="code-example style">
+						<p class="title">Pontilhado</p>
+						<p class="description">Especifica um contorno com pontos/bolinhas</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-style</span>: <span class="value">dotted</span>; }</code>
+						<span class="outline-style dotted">Elemento estilizado</span>
+					</div>
+
+					<div class="code-example style">
+						<p class="title">Tracejado</p>
+						<p class="description">Especifica um contorno com traços/linhas seccionadas</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-style</span>: <span class="value">dashed</span>; }</code>
+						<span class="outline-style dashed">Elemento estilizado</span>
+					</div>
+
+					<div class="code-example style">
+						<p class="title">Sólido</p>
+						<p class="description">Especifica um contorno sólido, uma linha de uma cor apenas</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-style</span>: <span class="value">solid</span>; }</code>
+						<span class="outline-style solid">Elemento estilizado</span>
+					</div>
+
+					<div class="code-example style">
+						<p class="title">Dobrado</p>
+						<p class="description">Especifica um contorno com duas linhas</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-style</span>: <span class="value">double</span>; }</code>
+						<span class="outline-style double">Elemento estilizado</span>
+					</div>
+
+					<div class="code-example style">
+						<p class="title">Sulco</p>
+						<p class="description">Especifica um contorno 3D em sulco (lado de fora mais alto)</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-style</span>: <span class="value">groove</span>; }</code>
+						<span class="outline-style groove">Elemento estilizado</span>
+					</div>
+
+					<div class="code-example style">
+						<p class="title">Cume</p>
+						<p class="description">Especifica um contorno 3D em cume (lado de dentro mais alto)</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-style</span>: <span class="value">ridge</span>; }</code>
+						<span class="outline-style ridge">Elemento estilizado</span>
+					</div>
+
+					<div class="code-example style">
+						<p class="title">Para dentro</p>
+						<p class="description">Especifica um contorno 3D como se fosse um botão pressionado</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-style</span>: <span class="value">inset</span>; }</code>
+						<span class="outline-style inset">Elemento estilizado</span>
+					</div>
+
+					<div class="code-example style">
+						<p class="title">Para fora</p>
+						<p class="description">Especifica um contorno 3D como se fosse um botão ainda não pressionado</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-style</span>: <span class="value">outset</span>; }</code>
+						<span class="outline-style outset">Elemento estilizado</span>
+					</div>
+
+					<div class="code-example style">
+						<p class="title">Inicial</p>
+						<p class="description">Retorna a propriedade a seu comportamento padrão (como se fosse um elemento não estilizado)</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-style</span>: <span class="value">initial</span>; }</code>
+						<span class="outline-style initial">Elemento estilizado</span>
+					</div>
+
+					<div class="code-example style pai-do-elemento">
+						<p class="title">Herdado</p>
+						<p class="description">Herda o valor da propriedade pai</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-style</span>: <span class="value">inherit</span>; }</code>
+						<span class="outline-style inherit">Elemento estilizado</span>
+					</div>
+				</details>
+				
+				<!-- Color -->
+				<details>
+					<summary>Outline color</summary>
+					<p>A propriedade CSS <code><span class="property">outline-color</span></code> especifica a cor do contorno. Pode ser por meio de uma cor padrão do CSS (como <code><span class="value">red</span></code> e <code><span class="value">blue</span></code>) ou alguma outra referência de cor (como RGB <code><span class="property">rgb(<span class="value">244</span>, <span class="value">0</span>, <span class="value">0</span>)</span></code> e hexadecimal <code><span class="value">#808000</span></code>).</p>
+
+					<div class="code-example color">
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-color</span>: <span class="value">red</span>; }</code>
+
+						<span class="outline-color red">Elemento estilizado</span>
+						
+						<br><br>
+						
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-color</span>: <span class="value">#0000FF</span>; }</code>
+						<span class="outline-color blue">Elemento estilizado</span>
+					</div>
+				</details>
+
+				<!-- Width -->
+				<details>
+					<summary>Outline width</summary>
+					<p>A propriedade CSS <code><span class="property">outline-width</span></code> especifica o tamanho do contorno. é possível utilizar três referências de tamanho com nome ou então especificar um tamanho específico:</p>
+
+					<div class="code-example width">
+						<p class="title">Fino</p>
+						<p class="description">Especifica uma linha fina</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-width</span>: <span class="value">thin</span>; }</code>
+						<span class="outline-width thin">Elemento estilizado</span>
+					</div>
+
+					<div class="code-example width">
+						<p class="title">Médio</p>
+						<p class="description">Especifica uma linha de tamanho médio (entre fino e grosso)</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-width</span>: <span class="value">medium</span>; }</code>
+						<span class="outline-width medium">Elemento estilizado</span>
+					</div>
+
+					<div class="code-example width">
+						<p class="title">Grosso</p>
+						<p class="description">Especifica uma linha grossa</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-width</span>: <span class="value">thick</span>; }</code>
+						<span class="outline-width thick">Elemento estilizado</span>
+					</div>
+
+					<div class="code-example width">
+						<p class="title">Tamanho específico</p>
+						<p class="description">Especifica um tamanho personalizado para o contorno</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-width</span>: <span class="value">9</span><span class="reserved-keyword">px</span>; }</code>
+						<span class="outline-width number">Elemento estilizado</span>
+					</div>
+				</details>
+				
+				<!-- Offset -->
+				<details>
+					<summary>Outline offset</summary>
+					<p>A propriedade CSS <code><span class="property">outline-offset</span></code> especifica o distanciamento (ou desvio) que o contorno terá do elemento.</p>
+
+					<div class="code-example width">
+						<p class="title">Valores positivos</p>
+						<p class="description">Afastam o contorno do elemento</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-offset</span>: <span class="value">6</span><span class="reserved-keyword">px</span>; }</code>
+						<span class="outline-offset positive">Elemento estilizado</span>
+					</div>
+
+					<div class="code-example width">
+						<p class="title">Valor nulo</p>
+						<p class="description">Mantém o contorno "colado" no elemento, comportamento padrão</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-offset</span>: <span class="value">0</span><span class="reserved-keyword">px</span>; }</code>
+						<span class="outline-offset null">Elemento estilizado</span>
+					</div>
+
+					<div class="code-example width">
+						<p class="title">Valor negativo</p>
+						<p class="description">Atrai o contorno para o elemento, entrando dentro dele</p>
+						<code><span class="reserved-keyword">div</span> { <span class="property">outline-offset</span>: <span class="value">-6</span><span class="reserved-keyword">px</span>; }</code>
+						<span class="outline-offset negative">Elemento estilizado</span>
+					</div>
+				</details>
+			</li>
+		</ul>
+	</main>
+
+	<footer>
+		<img src="img/logo-IFPR.png" alt="Instituto Federal do Paraná, Campus Capanema" width="130">
+		<p><small>&copy; 2026 - Mateus Hirt</small></p>
+	</footer>
+</body>
+</html>

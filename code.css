@@ -1,0 +1,19 @@
+/* Tentando imitar o tema Tokyo Night - Storm */
+code {
+	background-color: #24283B;
+	padding: 1px 6px 2px 6px;
+	border-radius: 4px;
+	color: #68B3BF;
+
+	& .reserved-keyword { color: #F7768E; }
+	& .text-string { color: #8ECE6A; }
+	& .attribute { color: #BB9AF7; }
+	& .property { color: #70A2F7; }
+	& .value { color: #DC9E58; }
+}
+
+.big-code {
+	background-color: #24283B;
+	padding: 10px 6px 10px 6px;
+	border-radius: 4px;
+}

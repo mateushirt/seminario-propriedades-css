@@ -1,3 +1,24 @@
+/* Outline vs. Border */
+.border-example,
+.outline-example {
+	background-color: greenyellow;
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	width: 225px;
+}
+
+.border-example {
+	border: 5px solid orangered;
+}
+
+.outline-example {
+	outline: 5px solid blue;
+	outline-offset: 15px;
+}
+
+/* ——————————————————————————————————————————————— */
+
 /* Outline Style */
 .outline-style.none {
 	outline-style: none;
@@ -108,4 +129,18 @@
 .outline-offset.negative {
 	outline-style: solid;
 	outline-offset: -6px;
+}
+
+/* ——————————————————————————————————————————————— */
+
+/* Outline Shorthand */
+.shorthand-example1 {
+	outline-style: solid;
+	outline-color: #2F9E41;
+	outline-width: 3px;
+}
+
+.shorthand-example2 {
+	outline: 3px solid #2F9E41;
+	outline-offset: 10px;
 }

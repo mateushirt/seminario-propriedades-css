@@ -138,9 +138,13 @@
 	outline-style: solid;
 	outline-color: #2F9E41;
 	outline-width: 3px;
+
+	width: 400px;
 }
 
 .shorthand-example2 {
 	outline: 3px solid #2F9E41;
 	outline-offset: 10px;
+
+	width: 400px;
 }

@@ -54,7 +54,6 @@ summary {
 
 :has(details:open) details:not(:open) summary {
 	background-color: #2223;
-	pointer-events: none;
 	transition: 500ms;
 	padding: 5px 10px;
 	color: #222A;
@@ -62,4 +61,19 @@ summary {
 
 section {
 	margin-bottom: 10px;
+}
+
+.color:before {
+	color: var(--color);
+	font-size: 15px;
+	position: block;
+	content: '■ ';
+	height: 5px;
+	width: 5px;
+	
+	text-shadow:
+		1px 1px #f7f7f7,
+		1px -1px #f7f7f7,
+		-1px -1px #f7f7f7,
+		-1px 1px #f7f7f7;
 }

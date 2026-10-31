@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="code.css">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/code.css">
 	<link rel="stylesheet" href="outline.css">
+	<link rel="icon" type="image/svg+xml" href="img/icon.svg">
 	<title>Outline no CSS</title>
 </head>
 <body>
@@ -122,21 +123,21 @@
 					<!-- Color -->
 					<details>
 						<summary>Outline color</summary>
-						<p>A propriedade CSS <code><span class="property">outline-color</span></code> especifica a cor do contorno. Pode ser por meio de uma cor padrão do CSS (como <code><span class="value">red</span></code> e <code><span class="value">blue</span></code>) ou alguma outra referência de cor (como RGB <code><span class="property">rgb(<span class="value">244</span>, <span class="value">0</span>, <span class="value">0</span>)</span></code> e hexadecimal <code><span class="value">#808000</span></code>).</p>
+						<p>A propriedade CSS <code><span class="property">outline-color</span></code> especifica a cor do contorno. Pode ser por meio de uma cor padrão do CSS (assim como <code><span class="value color" style="--color: red;">red</span></code> e <code><span class="value color" style="--color: blue;">blue</span></code>) ou alguma outra referência de cor (como RGB <code><span class="property color" style="--color: rgb(244, 0, 0);">rgb(<span class="value">244</span>, <span class="value">0</span>, <span class="value">0</span>)</span></code> e hexadecimal <code><span class="value color" style="--color: #32FF32;">#32FF32</span></code>).</p>
 
-						<div class="code-example color">
-							<code><span class="reserved-keyword">div</span> { <span class="property">outline-color</span>: <span class="value">red</span>; }</code>
+						<div class="code-example">
+							<code><span class="reserved-keyword">div</span> { <span class="property">outline-color</span>: <span class="value color" style="--color: red;">red</span>; }</code>
 
 							<span class="outline-color red">Elemento estilizado</span>
 							
 							<br><br>
 							
-							<code><span class="reserved-keyword">div</span> { <span class="property">outline-color</span>: <span class="value">#0000FF</span>; }</code>
+							<code><span class="reserved-keyword">div</span> { <span class="property">outline-color</span>: <span class="value color" style="--color: #0000FF;">#0000FF</span>; }</code>
 							<span class="outline-color blue">Elemento estilizado</span>
 
 							<br><br>
 							
-							<code><span class="reserved-keyword">div</span> { <span class="property">outline-color</span>: <span class="property">rgb(<span class="value">50</span>, <span class="value">255</span>, <span class="value">50</span>); }</code>
+							<code><span class="reserved-keyword">div</span> { <span class="property">outline-color</span>: <span class="property color" style="--color: rgb(50, 255, 50);">rgb(<span class="value">50</span>, <span class="value">255</span>, <span class="value">50</span>); }</code>
 							<span class="outline-color green">Elemento</span>
 						</div>
 					</details>
@@ -213,13 +214,13 @@
 				<pre class="big-code">
 					<code><span class="reserved-keyword">div</span> {</code>
 					<code>&ThickSpace;<span class="property">outline-style</span>: <span class="value">solid</span>;</code>
-					<code>&ThickSpace;<span class="property">outline-color</span>: <span class="value">#2F9E41</span>;</code>
+					<code>&ThickSpace;<span class="property">outline-color</span>: <span class="value color" style="--color: #2F9E41;">#2F9E41</span>;</code>
 					<code>&ThickSpace;<span class="property">outline-width</span>: <span class="value">5</span><span class="reserved-keyword">px</span>;</code>
 					<code>}</code>
 				</pre>
 
 				<p>Pode ser escrito de forma abreviada como:</p>
-				<code><span class="reserved-keyword">div</span> { <span class="property">outline</span>: <span class="value">3</span><span class="reserved-keyword">px</span> <span class="value">solid</span> <span class="value">#2F9E41</span>; }</code>
+				<code><span class="reserved-keyword">div</span> { <span class="property">outline</span>: <span class="value">3</span><span class="reserved-keyword">px</span> <span class="value">solid</span> <span class="value color" style="--color: #2F9E41;">#2F9E41</span>; }</code>
 
 				<br><br>
 				<div class="shorthand-example1">Elemento estilizado</div>
@@ -228,7 +229,7 @@
 				<p>Importante notar que o <code><span class="property">outline-offset</span></code> não consegue ser escrito dentro da forma abreviada acima, então sempre tem que ser declarado fora:</p>
 				<pre class="big-code">
 					<code><span class="reserved-keyword">div</span> {</code>
-					<code>&ThickSpace;<span class="property">outline</span>: <span class="value">3</span><span class="reserved-keyword">px</span> <span class="value">solid</span> <span class="value">#2F9E41</span>;</code>
+					<code>&ThickSpace;<span class="property">outline</span>: <span class="value">3</span><span class="reserved-keyword">px</span> <span class="value">solid</span> <span class="value color" style="--color: #2F9E41;">#2F9E41</span>;</code>
 					<code>&ThickSpace;<span class="property">outline-offset</span>: <span class="value">10</span><span class="reserved-keyword">px</span>;</code>
 					<code>}</code>
 				</pre>
@@ -246,7 +247,7 @@
 		<p><strong>Fonte:</strong> <a href="https://www.w3schools.com/css/css_outline.asp">W3 Schools</a></p>
 
 		<img src="img/logo-IFPR.png" alt="Instituto Federal do Paraná, Campus Capanema" width="130">
-		<p><small>&copy; 2026 - Mateus Hirt</small></p>
+		<p><small>&copy; 2026 - Mateus Hirt & Eduardo Pereira Moreira</small></p>
 	</footer>
 </body>
 </html>
